@@ -1,0 +1,67 @@
+/* TodoItems.module.css */
+.row {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin: 0.5rem 0;
+    background: #252525;
+    border-radius: 8px;
+    border: 1px solid #333;
+    transition: all 0.2s ease;
+    color: aliceblue;  
+}
+  
+  .row:hover {
+    background: #2a2a2a;
+    border-color: #3a3a3a;
+  }
+  
+  .col-sm-5 {
+    flex: 1;
+    text-align: left;
+    padding: 0 1rem;
+    font-size: 0.95rem;
+    color: #e0e0e0;
+  }
+  
+  .col-sm-5:first-child {
+    font-weight: 500;
+    color: #ffffff;
+  }
+ 
+  
+  .btn-danger {
+    background-color: #d93636;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.8rem;
+  }
+  
+  .btn-danger:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(245, 101, 101, 0.3);
+    }
+  
+  /* Task priority indicator */
+  .row::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #4a80f0;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  /* Add some spacing between items */
+  .row + .row {
+    margin-top: 0.75rem;
+  }
