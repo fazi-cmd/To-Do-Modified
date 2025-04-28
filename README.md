@@ -1,37 +1,26 @@
 
-📝 React Todo App
-A simple and clean Todo List application built with React. It allows users to add, delete, and manage daily tasks easily.
+📝 To-Do App with useRef
+This is a simple To-Do application built using React. Initially, the app was built using only the useState hook for managing state, but it has now been refactored to use the useRef hook for certain operations, enhancing the performance and behavior of the app.
 
-🚀 Features
-✅ Add new todo items
+Features
+Add New Tasks: Users can add new tasks to the list.
 
-🗑️ Delete items using a button
+Mark Tasks as Completed: Tasks can be marked as completed.
 
-📦 Uses React state and .filter() method
+Delete Tasks: Tasks can be deleted from the list.
 
-🧠 Clean and beginner-friendly code structure
+Improved Performance with useRef: By using useRef, certain DOM operations and references are optimized, improving performance.
 
-🛠️ Tech Stack
-React (Functional Components + Hooks)
+Technologies Used
+React
 
-JavaScript
+useRef Hook
 
-HTML/CSS
+useState Hook
+How to Use
+Add tasks using the input field and clicking the "Add Task" button.
 
-📁 Project Structure
-bash
-Copy
-Edit
-/src
- ├── App.js
- ├── TodoList.js
- ├── TodoItem.js
- └── index.js
-📦 How to Run
-Clone the repository
+Mark tasks as completed by clicking on them.
 
-Run npm install
-
-Run npm start
-
-Open in browser at  https://taskmanagerreal.netlify.app/
+Delete tasks by clicking the "Delete" button next to each task.
+Live Demo: 
