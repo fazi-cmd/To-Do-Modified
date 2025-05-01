@@ -1,5 +1,11 @@
+import {useContext } from 'react';
+import { TodoContext } from '../data/todo-items';
 import TodoItems from './TodoItems';
-function TodoItem({todoItems, onDeleteClick}){
+function TodoItem() {
+
+const {todoItems}=useContext(TodoContext);
+
+
     return (
       <div className="task-container">
         {todoItems.map((item, index) => (
@@ -7,7 +13,6 @@ function TodoItem({todoItems, onDeleteClick}){
             key={index}
             todoName={item.name} 
             todoDate={item.date}
-            onDeleteClick={onDeleteClick}
             className={item.urgent ? "urgent" : ""}
           />
         ))}
